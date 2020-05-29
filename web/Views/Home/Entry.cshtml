@@ -2,9 +2,12 @@
 
 @{
     ViewData["Title"] = Model.Title;
+
+    Contentstack.Core.ContentstackClient client = 
+        (Contentstack.Core.ContentstackClient)ViewData[typeof(Contentstack.Core.ContentstackClient).ToString()];
 }
 
-<h1 align="center">@Model.Title</h1>
+<h1 align="center">@client.ToString()</h1>
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>

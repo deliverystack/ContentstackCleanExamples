@@ -100,6 +100,7 @@
                 return Content(entry.ToJson().ToString());
             }
 
+            ViewData[typeof(ContentstackClient).ToString()] = _client;
             return View(entry);
         }
 
