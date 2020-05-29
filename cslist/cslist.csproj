@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="contentstack.aspnetcore" Version="1.0.0" />
+      <PackageReference Include="contentstack.csharp" Version="2.2.1" />
+      <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="3.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0-preview.4.20251.6" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="bin\Debug\netcoreapp3.1\appsettings.json" />
+    </ItemGroup>
+
+</Project>
